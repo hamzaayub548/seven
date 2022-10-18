@@ -1,3 +1,22 @@
+<style>
+    .dis {
+        position: relative;
+    }
+    .dis .text {
+        position: absolute;
+        display: flex;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        color: white;
+        visibility: hidden;
+        font-weight: bold;
+    }
+    .dis:hover .text {
+        visibility: visible;
+    }
+</style>
+
 <section class="photo-gallery py-4 py-xl-5">
     <div class="container">
         <div class="row mb-5">
@@ -6,7 +25,12 @@
             </div>
         </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center align-items-center photos" data-bss-baguettebox="">
-            <div class="col item" style="height: 150px;"><span style="padding-right: 5px;padding-bottom: 20px;padding-left: 5px;background: #303030;color: rgb(255,255,255);">Criminal Defense</span><img class="img-fluid" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" src="/img/1areas-of-defense.jpg.webp" width="367" height="103" style="margin-top: 10px;"></div>
+            <div class="col item" style="height: 150px;"><span style="padding-right: 5px;padding-bottom: 20px;padding-left: 5px;background: #303030;color: rgb(255,255,255);">Criminal Defense</span>
+                <div class="dis">
+                    <img class="img-fluid" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" src="/img/1areas-of-defense.jpg.webp" width="367" height="103" style="margin-top: 10px;">
+                    <p class="text">Criminal Defense</p>
+                </div>
+            </div>
             <div class="col item" style="height: 150px;"><span style="padding-right: 5px;padding-bottom: 20px;padding-left: 5px;background: #303030;color: rgb(255,255,255);">San Diego DUI Lawyer</span><img class="img-fluid" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" src="/img/1San-Diego-DUIDWI-Defense-Lawyers.jpg.webp" width="367" height="103" style="margin-top: 10px;"></div>
             <div class="col item" style="height: 150px;"><span style="padding-right: 5px;padding-bottom: 20px;padding-left: 5px;background: #303030;color: rgb(255,255,255);">San Diego DUI Penalties</span><img class="img-fluid" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" src="/img/1San-Diego-DUI-Penalties.jpg.webp" width="367" height="103" style="margin-top: 10px;"></div>
             <div class="col item" style="height: 150px;"><span style="padding-right: 5px;padding-bottom: 20px;padding-left: 5px;background: #303030;color: rgb(255,255,255);">San Diego Blood Alcohol Level (BAC)</span><img class="img-fluid" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" src="/img/1San-Diego-Blood-Alcohol-Level1.jpg.webp" width="367" height="103" style="margin-top: 10px;"></div>
