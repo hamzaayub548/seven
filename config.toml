@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://sevenslegals.netlify.app/'
 languageCode = 'en-us'
 title = 'Sevebs Legal'
 themesDir = "themes"
