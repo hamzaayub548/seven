@@ -1,0 +1,34 @@
+<style>
+    .breadcrumb {
+        list-style: none;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+
+    .breadcrumb li {
+        display: inline;
+        white-space: nowrap;
+    }
+
+    .breadcrumb li+li:before {
+        content: ">";
+        padding: 0.3rem;
+    }
+</style>
+
+<section>
+    <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            {{ $rellink := "" }}
+            {{ range (split .RelPermalink "/") }}
+            {{ if gt (len . ) 0 -}}
+            {{ $rellink = printf "%s/%s" $rellink . }}
+            <li><a href="{{ $rellink }}">{{ humanize . }}</a></li>
+            {{ end }}
+            {{ end }}
+        </ol>
+    </div>
+</section>
